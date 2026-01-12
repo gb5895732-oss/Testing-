@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MinePro | DOBI Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        :root {
+            --bg: #FFFDE7;
+            --panel: #ffffff;
+            --border: #F6E3BA;
+            --text: #5D4037;
+            --muted: #8D6E63;
+            --accent: #CFB284;
+            --accent-soft: #FFEFCB;
+            --shadow: 0 10px 28px rgba(93, 64, 55, 0.05);
+        }
+        .dark {
+            --bg: #1C1917;
+            --panel: #292524;
+            --border: #44403c;
+            --text: #FFFDE7;
+            --muted: #DFCAA0;
+            --accent: #CFB284;
+            --accent-soft: #3F3F46;
+            --shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+        }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        .panel {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+        }
+        .card {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: 18px;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+        }
+        .card.clickable:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+            box-shadow: 0 14px 36px rgba(207, 178, 132, 0.18);
+            cursor: pointer;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
